@@ -1,7 +1,6 @@
 package np.com.rts.internship.beginners;
-
 import java.util.*;
-
+import java.util.Arrays;
 
 public class Main {
 
@@ -17,13 +16,20 @@ public class Main {
           "%$compli"
   };
 
+
   public Main() {
-    // Write your code here
 
-
+	  Arrays.sort(strings);
+      for(int i=0; i < strings.length; i++){
+          System.out.println(strings[i]);
+      }
+      System.out.println("last element of the array");
+      System.out.println(strings[strings.length-1]);
   }
 
-  public static void main(String[] args) {
+
+
+    public static void main(String[] args) {
     new Main();
   }
 }
